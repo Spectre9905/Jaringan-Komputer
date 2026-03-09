@@ -15,5 +15,6 @@ Pengenalan Tools - Uji coba capture HTTP Traffic dengan wireshark
 4. double click pada response in frame
 ![gambar 3](../assets/image/Modul2-3.png)
 5. lalu klik Line-based text data
+
 ![gambar 4](../assets/image/Modul2-4.png)
 
