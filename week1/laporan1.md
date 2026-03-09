@@ -1,5 +1,5 @@
 # Laporan Praktikum Jaringan Komputer Modul 1
-Running modul - Instalasi wireshark dan Python
+Running modul - Instalasi wireshark dan uji capture
 
 # Tujuan Praktikum
 1. Mahasiswa mengetahui aturan dan sistem pelaksanaan praktikum
