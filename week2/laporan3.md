@@ -23,6 +23,7 @@ HTTP - Analisis HTTP Packet
 
 pastikan muncul seperti dibawah ini setelah sign in
 ![](../assets/image/Modul3-7.png)
+
 8. Lihat lagi response nya di wireshark
 ![](../assets/image/Modul3-8.png)
 disini kita bisa melihat username dan password dapat dicapture
