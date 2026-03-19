@@ -18,7 +18,9 @@ HTTP - Analisis HTTP Packet
 6. Lalu Buka URL: http://gaia.cs.umass.edu/wireshark-labs/protected_pages/HTTP-wireshark-file5.html pada browser, akan muncul tampilan login seperti ini
 ![](../assets/image/Modul3-5.png)
 7. Masukkan username wireshark-students dan password network
+
 ![](../assets/image/Modul3-6.png)
+
 pastikan muncul seperti dibawah ini setelah sign in
 ![](../assets/image/Modul3-7.png)
 8. Lihat lagi response nya di wireshark
