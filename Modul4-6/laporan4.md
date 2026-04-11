@@ -74,32 +74,41 @@ Ada 3 jawaban, isi nya Name,Type,Class, TTL,Data Lenght, dan CNAME.
 6. Perhatikan paket TCP SYN yang selanjutnya dikirimkan oleh host Anda. Apakah alamat IP pada paket tersebut sesuai dengan alamat IP yang tertera pada pesan balasan DNS?
 ![](../assets/image/Modul4-16.png)
 ya sudah sesuai dengan saat pengecekan nslookup alaamt 20.189.173.27 adalah salah satu address yang diberikan.
-Halaman web yang sebelumnya anda akses (http://www.ietf.org) memuat beberapa gambar. Apakah host Anda perlu mengirimkan pesan permintaan DNS baru setiap kali ingin mengakses suatu gambar?
+
+7. Halaman web yang sebelumnya anda akses (http://www.ietf.org) memuat beberapa gambar. Apakah host Anda perlu mengirimkan pesan permintaan DNS baru setiap kali ingin mengakses suatu gambar?
 ![](../assets/image/Modul4-17.png)
 Tidak, karena browser melakukan DNS lookup untuk mendapatkan alamat IP lalu disimpan di cache
 
 ### Jawaban pertanyaan 2 nslookup -type=NS mit.edu
 1. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut merupakan default alamat IP server DNS lokal Anda?
 ![](../assets/image/Modul4-18.png)
+
 dikirim ke 10.217.7.77
 
 2. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan tersebut mengandung ”jawaban” atau ”answers”?
 ![](../assets/image/Modul4-19.png)
+
 Type NS, Ya mengandung answers
+
 3. Periksa pesan balasan DNS. Apa nama server MIT yang diberikan oleh pesan balasan? Apakah pesan balasan ini juga memberikan alamat IP untuk server MIT tersebut?
 ![](../assets/image/Modul4-20.png)
+
 dari jawaban dns hanya mengembalikan Nameserver tidak dengan ip server.
 
 ### Jawaban pertanyaan 3 nslookup www.aiitr.or.kr bitsy.mit.edu
 1. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut merupakan default alamat IP server DNS lokal Anda?
 ![](../assets/image/Modul4-21.png)
+
 DIkirim ke 18.0.72.3 yaitu IP dari server DNS bitsy.mit.edu
 
 2. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan tersebut mengandung ”jawaban” atau ”answers”?
 ![](../assets/image/Modul4-22.png)
+
 bertipe Queries , tidak ada answers.
+
 3. Periksa pesan balasan DNS. Berapa banyak ”jawaban” atau “answers” yang terdapat di dalamnya. Apa saja isi yang terkandung dalam setiap jawaban tersebut?
 ![](../assets/image/Modul4-23.png)
+
 answers tidak diterima karena terjadi timeout pada server DNS
 
 
