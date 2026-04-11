@@ -19,6 +19,7 @@ melalui salah satu server yang didapatkan di pertanyaan nomor 2. Apa alamat IP-n
 ![](../assets/image/Modul4-3.png)
 
 disini kita lakukan nslookup yahoo.com dengan dns 1.1.1.1 yang merupakan cloudflare DNS publik, dapat dilihat yahoo.com memiliki 3 domain mailserver.
+
 ![](../assets/image/Modul4-4.png)
 
 namun jika kita menggunakan ns1.cloudflare.net dari soal nomor 2 akan terjadi timeout dikarenakan server tersebut tidak melayani query eksternal jadi saya menggunakan 1.1.1.1 sebagai gantinya.
@@ -47,23 +48,29 @@ mengosongkan catatan DNS berarti menghapus semua record dan memuat ulang record 
 ![](../assets/image/Modul4-10.png)
 
 pesan tersebut dikirim melalui UDP.
+
 2. Apa port tujuan pada pesan permintaan DNS? Apa port sumber pada pesan balasannya?
 ![](../assets/image/Modul4-11.png)
 
 port source(sumber) nya 59962 dan port destination(tujuan) nya 53
+
 3. Pada pesan permintaan DNS, apa alamat IP tujuannya? Apa alamat IP server DNS lokal anda (gunakan ipconfig untuk mencari tahu)? Apakah kedua alamat IP tersebut sama?
 
 ![](../assets/image/Modul4-12.png)
 ![](../assets/image/Modul4-13.png)
 
 ya alamat ip tujuan dan server dns lokal sama.
+
 4. Periksa pesan permintaan DNS. Apa “jenis” atau ”type” dari pesan tersebut? Apakah pesan permintaan tersebut mengandung ”jawaban” atau ”answers”?
 ![](../assets/image/Modul4-14.png)
 
 Type A dan juga AAAA, ya mengandung answer
+
 5. Periksa pesan balasan DNS. Berapa banyak ”jawaban” atau ”answers” yang terdapat di dalamnya? Apa saja isi yang terkandung dalam setiap jawaban tersebut?
 ![](../assets/image/Modul4-15.png)
+
 Ada 3 jawaban, isi nya Name,Type,Class, TTL,Data Lenght, dan CNAME.
+
 6. Perhatikan paket TCP SYN yang selanjutnya dikirimkan oleh host Anda. Apakah alamat IP pada paket tersebut sesuai dengan alamat IP yang tertera pada pesan balasan DNS?
 ![](../assets/image/Modul4-16.png)
 ya sudah sesuai dengan saat pengecekan nslookup alaamt 20.189.173.27 adalah salah satu address yang diberikan.
